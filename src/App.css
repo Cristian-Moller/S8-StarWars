@@ -1,0 +1,25 @@
+#root {
+  width: 100%;
+  max-width: 1280px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+ul{
+  width: 60%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+li{
+  width: 100%;
+  height: 3rem;
+  border: 1px solid black;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
