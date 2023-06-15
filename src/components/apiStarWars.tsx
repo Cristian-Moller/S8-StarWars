@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react"
 import { IStarship } from "../types/interfaces"
+import { DetailStarShip } from "./detailStarShip"
 
-function ApiStarWars() {
+
+function ApiStarWars(){
+
   const [ starShips, setStarShips] = useState<IStarship[]>([])
 
   useEffect(() => {
@@ -11,17 +14,19 @@ function ApiStarWars() {
   }, [])
 
   return (
+
     <>
-      <ul>
-        {starShips.map((elem) => {
+      <ul className="listStarShips" >
+        {starShips.map((elem, index) => {
+          
           return (
             <li key={elem.name}>
-              <div>
-                {elem.name}
-              </div>
-              <div>
-                {elem.model}
-              </div> 
+
+              <DetailStarShip
+                ship={elem}
+                key={index}
+              />
+
             </li>
           )
         })}

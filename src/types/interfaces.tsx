@@ -17,3 +17,8 @@ export interface IStarship {
   starship_class: string;
   url: string;
 }
+
+export interface IStarshipProp {
+  ship: IStarship;
+  onClick?: () => void;
+}

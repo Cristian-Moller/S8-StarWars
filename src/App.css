@@ -6,20 +6,43 @@
   justify-content: center;
 }
 
-ul{
+.listStarShips{
   width: 60%;
   list-style: none;
+  vertical-align: top;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.shipContainer{
+  width: 100%;
+  text-align: center;
 }
 li{
   width: 100%;
-  height: 3rem;
+  height: auto;
   border: 1px solid black;
   font-size: large;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1rem;
+}
+.detailsList{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 4.5rem;
+}
+.detailsCenter{
+  width: 90%;
+}
+.detailsLeft, .detailsRight{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
 }
