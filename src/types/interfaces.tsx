@@ -30,8 +30,6 @@ export interface IButton {
   isLoading: boolean;
 }
 export interface IPaginated {
-  page: number;
   handleNext: () => void;
-  handleprevious: () => void;
   isLoading: boolean;
 }
