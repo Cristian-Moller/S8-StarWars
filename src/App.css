@@ -46,3 +46,20 @@ li{
   display: flex;
   flex-direction: column;
 }
+.buttonPageContent{
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: x-large;
+}
+.buttonPageContent p{
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.buttonPage{
+  width: 30%;
+  height: 100%;
+  padding: 0;
+  border: 1px solid black;
+}

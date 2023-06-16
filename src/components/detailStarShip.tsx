@@ -4,7 +4,7 @@ import { IStarshipProp } from "../types/interfaces";
 
 export function DetailStarShip({ship}: IStarshipProp) {
 
-  const [ showStarShip, setShowStarShip] = useState<boolean>(false)
+  const [showStarShip, setShowStarShip] = useState<boolean>(false)
 
   const handleShow = () => {
     setShowStarShip(!showStarShip)

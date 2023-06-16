@@ -22,3 +22,16 @@ export interface IStarshipProp {
   ship: IStarship;
   onClick?: () => void;
 }
+
+export interface IButton {
+  text: string;
+  handleClick: () => void;
+  className: string;
+  isLoading: boolean;
+}
+export interface IPaginated {
+  page: number;
+  handleNext: () => void;
+  handleprevious: () => void;
+  isLoading: boolean;
+}
