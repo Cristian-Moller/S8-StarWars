@@ -2,8 +2,7 @@
   width: 100%;
   max-width: 1280px;
   height: auto;
-  display: flex;
-  justify-content: center;
+  
 }
 
 .listStarShips{
@@ -18,9 +17,10 @@
   width: 100%;
   text-align: center;
 }
-li{
+.listStarShips li{
   width: 100%;
-  height: auto;
+  min-height: 5rem;
+  max-height: auto;
   border: 1px solid black;
   font-size: large;
   display: flex;
@@ -46,6 +46,18 @@ li{
   display: flex;
   flex-direction: column;
 }
+.detailsCenter li, .detailsLeft li, .detailsRight li{
+  width: 100%;
+  min-height: 2rem;
+  max-height: auto;
+  border: 1px solid black;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
 .buttonPageContent{
   height: 3rem;
   display: flex;
@@ -64,4 +76,8 @@ li{
   height: 100%;
   padding: 0;
   border: 1px solid black;
+}
+.infinite-scroll-component__outerdiv{
+  width: 100%;
+  text-align: -webkit-center;
 }
