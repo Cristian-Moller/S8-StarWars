@@ -29,7 +29,6 @@ function ApiStarWars() {
         setItemStarShips(itemStarShips.concat(res.results))
       }
     })
-    console.log(next)
   }
 
   useEffect(() => {

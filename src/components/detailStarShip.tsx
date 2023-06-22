@@ -23,12 +23,12 @@ export function DetailStarShip({ship}: IStarshipProp) {
         (showStarShip) ? (
           <ul className="detailsList" >
             <div className={showStarShip ? "detailsCenter" : "display: none"}>
-              <li>{ship.name} </li>
+              <li><strong>{ship.name}</strong> </li>
               <li> 
                 <img src={`https://starwars-visualguide.com/assets/img/starships/${numberURL}.jpg`} onError={(error) => {
                     error.currentTarget.src = 'https://starwars-visualguide.com/assets/img/big-placeholder.jpg' } } alt="" /> 
               </li>
-              <li>Model: {ship.model} </li>
+              <li>Model: {ship.model}</li>
               <li>Starship class: {ship.starship_class} </li>
               <li>Manufacturer: {ship.manufacturer} </li>
               <li>Cost: {ship.cost_in_credits} </li>
