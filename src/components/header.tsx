@@ -7,7 +7,6 @@ function Header(){
     <header>
       <div>
         <img src={starwars} alt="" />
-
       </div>
       <NavBar />
     </header>
