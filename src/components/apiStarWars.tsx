@@ -62,7 +62,6 @@ function ApiStarWars() {
           { 
             itemStarShips.map((elem, index) => {
 
-              console.log('ship',elem.name)
               return (
                 <li key={elem.name}>
 
