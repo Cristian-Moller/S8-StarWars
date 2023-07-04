@@ -16,11 +16,20 @@ export interface IStarship {
   passengers: string;
   starship_class: string;
   url: string;
+  films: string[];
+  pilots: string[];
 }
 
 export interface IStarshipProp {
   ship: IStarship;
   onClick?: () => void;
+}
+export interface IPilotsProp {
+  pilots: string[];
+}
+
+export interface IFilmsProp {
+  films: string[];
 }
 
 export interface IButton {

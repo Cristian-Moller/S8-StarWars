@@ -8,7 +8,6 @@ import Register from "./register";
 
 function Header(){
   const {user, logout} = useAuth()
-  console.log(user);
 
   const handleLogout = async() => {
     await logout()

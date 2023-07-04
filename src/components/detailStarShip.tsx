@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { IStarshipProp } from "../types/interfaces";
+import { Pilots } from "./pilots";
+import { Films } from "./films";
 
 
 export function DetailStarShip({ship}: IStarshipProp) {
@@ -12,7 +14,6 @@ export function DetailStarShip({ship}: IStarshipProp) {
 
   const URL = ship.url
   const numberURL = URL.replace(/\D/g, "")
-
 
   return (
     <div 
@@ -46,6 +47,32 @@ export function DetailStarShip({ship}: IStarshipProp) {
               <li>Max atmosphering speed: {ship.max_atmosphering_speed} </li>
               <li>Hyperdrive rating: {ship.hyperdrive_rating} </li>
               <li>Max speed in realspace: {ship.MGLT} </li>
+            </div>
+
+            <div className="detailsPilots"> PILOTS:
+              {
+                ship.pilots.map((elem, index) => {
+                  return (
+                      <Pilots
+                        key={index}
+                        pilots={elem}
+                      />
+                  )
+                })
+              }
+            </div>
+
+            <div className="detailsFilms"> FILMS:
+              {
+                ship.films.map((elem, index) => {
+                  return (
+                      <Films
+                        key={index}
+                        films={elem}
+                      />
+                  )
+                })
+              }
             </div>
           </ul>
         ) 
